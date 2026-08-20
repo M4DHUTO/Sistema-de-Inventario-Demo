@@ -22,7 +22,7 @@ async function ensureDatabaseExists() {
     host: process.env.PGHOST || 'localhost',
     port: Number(process.env.PGPORT) || 5432,
     user: process.env.PGUSER || 'postgres',
-    password: process.env.PGPASSWORD || 'postgres',
+    password: process.env.PGPASSWORD,
     database: 'postgres', // Conectar a la base default de administración
   });
 
@@ -64,7 +64,7 @@ export async function initDatabase() {
         port: Number(process.env.PGPORT) || 5432,
         database: process.env.PGDATABASE || 'inventario_db',
         user: process.env.PGUSER || 'postgres',
-        password: process.env.PGPASSWORD || 'postgres',
+        password: process.env.PGPASSWORD,
       };
 
   const pool = new Pool(poolConfig);

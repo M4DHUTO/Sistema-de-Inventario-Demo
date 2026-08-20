@@ -18,7 +18,7 @@ const poolConfig = process.env.DATABASE_URL
       port: Number(process.env.PGPORT) || 5432,
       database: process.env.PGDATABASE || 'inventario_db',
       user: process.env.PGUSER || 'postgres',
-      password: process.env.PGPASSWORD || 'postgres',
+      password: process.env.PGPASSWORD,
       max: 20, // Máximo de conexiones concurrentes en el pool
       idleTimeoutMillis: 30000,
       connectionTimeoutMillis: 3000,
