@@ -1,0 +1,29 @@
+{
+  "name": "control-inventario-backend",
+  "version": "1.0.0",
+  "description": "Backend API REST con Node.js, Express y PostgreSQL para Control de Inventario DEMO",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "db:init": "node src/database/initDb.js",
+    "db:seed": "node src/database/seed.js"
+  },
+  "keywords": [
+    "inventory",
+    "postgresql",
+    "express",
+    "nodejs",
+    "rest-api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.13.3"
+  }
+}
